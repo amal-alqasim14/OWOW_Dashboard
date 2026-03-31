@@ -542,3 +542,352 @@
       justify-content: flex-start;
     }
   }
+
+  /* =============================================================
+   DOCUMENTS PAGE  (documents.html)
+   ============================================================= */
+
+/* ── Sidebar: client login block ──────────────────────────── */
+
+.docs-client-login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.docs-client-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.docs-client-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.docs-client-logout {
+  font-size: 11px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.docs-client-logout:hover {
+  color: #374151;
+}
+
+/* ── Breadcrumb ───────────────────────────────────────────── */
+
+.docs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.docs-breadcrumb a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.docs-breadcrumb a:hover {
+  color: #374151;
+}
+
+.docs-breadcrumb-sep {
+  font-size: 11px;
+}
+
+/* ── Page header row ──────────────────────────────────────── */
+
+.docs-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.docs-header-row h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.docs-pm-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.docs-pm-info {
+  text-align: right;
+}
+
+.docs-pm-label {
+  font-size: 10px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.docs-pm-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.docs-pm-avatar-placeholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.docs-contact-btn {
+  padding: 8px 16px;
+  background: #1f2937;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.15s;
+}
+
+.docs-contact-btn:hover {
+  background: #374151;
+}
+
+/* ── Section title ────────────────────────────────────────── */
+
+.docs-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px;
+}
+
+/* ── Search bar ───────────────────────────────────────────── */
+
+.docs-search-wrap {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.docs-search-wrap i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.docs-search-input {
+  width: 260px;
+  padding: 9px 12px 9px 34px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #374151;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.docs-search-input:focus {
+  border-color: #6b7280;
+}
+
+.docs-search-input::placeholder {
+  color: #9ca3af;
+}
+
+/* ── Pinned documents label ───────────────────────────────── */
+
+.docs-pinned-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.docs-pinned-label i {
+  font-size: 12px;
+}
+
+/* ── Pinned documents grid ────────────────────────────────── */
+
+.docs-pinned-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.docs-pin-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 16px;
+  cursor: pointer;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.docs-pin-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.docs-pin-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* Category colour variants — shared by pin icons and table icons */
+.docs-pin-icon.legal,
+.docs-file-icon.legal     { background: #fee2e2; color: #dc2626; }
+
+.docs-pin-icon.strategy,
+.docs-file-icon.pm        { background: #dbeafe; color: #2563eb; }
+
+.docs-pin-icon.design,
+.docs-file-icon.research  { background: #fef3c7; color: #d97706; }
+
+.docs-file-icon.branding  { background: #ede9fe; color: #7c3aed; }
+
+.docs-pin-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.docs-pin-meta {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* ── Documents table ──────────────────────────────────────── */
+
+.docs-table-wrap {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.docs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.docs-table thead tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.docs-table th {
+  padding: 10px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.docs-th-updated {
+  text-align: right;
+}
+
+.docs-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.12s;
+  cursor: pointer;
+}
+
+.docs-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.docs-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.docs-table td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.docs-file-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.docs-file-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.docs-file-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.docs-category-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #374151;
+  background: #f3f4f6;
+}
+
+.docs-date {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: right;
+}

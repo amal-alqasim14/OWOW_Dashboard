@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documents</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="files-page">
+  <div class="app-layout">
+
+    <!-- ── Sidebar ───────────────────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/owow.svg" alt="OWOW logo" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Overview</span>
+        </a>
+        <a href="roadmap.html" class="nav-item">
+          <i class="fa-regular fa-map"></i>
+          <span>Roadmap</span>
+        </a>
+        <a href="documents.html" class="nav-item active">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="budget.html" class="nav-item">
+          <i class="fa-solid fa-wallet"></i>
+          <span>Budget</span>
+        </a>
+        <a href="updates.html" class="nav-item">
+          <i class="fa-regular fa-bell"></i>
+          <span>Updates</span>
+        </a>
+        <a href="links.html" class="nav-item">
+          <i class="fa-solid fa-link"></i>
+          <span>External Links</span>
+        </a>
+      </nav>
+
+      <!-- Bottom: Client login
+      <div class="sidebar-footer">
+        <div class="docs-client-login">
+          <div class="docs-client-avatar">CL</div>
+          <div>
+            <div class="docs-client-name">Client Login</div>
+            <div class="docs-client-logout">Log out</div>
+          </div>
+        </div>
+      </div>
+    </aside> --> <!-- will be added later-->
+
+    <!-- ── Main content ──────────────────────────────────────── -->
+    <main class="main-content">
+
+      <!-- Breadcrumb -->
+      <nav class="docs-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Projects</a>
+        <i class="fa-solid fa-chevron-right docs-breadcrumb-sep"></i>
+        <span>Project Lumina</span>
+      </nav>
+
+      <!-- Page header: title + project manager block -->
+      <div class="docs-header-row">
+        <h1>Project Lumina</h1>
+        <div class="docs-pm-block">
+          <div class="docs-pm-info">
+            <div class="docs-pm-label">Project Manager</div>
+            <div class="docs-pm-name">Sarah Jenkins</div>
+          </div>
+          <div class="docs-pm-avatar-placeholder">SJ</div>
+          <button class="docs-contact-btn">CONTACT</button>
+        </div>
+      </div>
+
+      <!-- Section title -->
+      <h2 class="docs-section-title">Project Documents</h2>
+
+      <!-- Search bar -->
+      <div class="docs-search-wrap">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          id="docs-search"
+          class="docs-search-input"
+          type="text"
+          placeholder="Search documents..."
+          aria-label="Search documents"
+        />
+      </div>
+
+      <!-- Pinned documents grid — populated by documents.js -->
+      <p class="docs-pinned-label">
+        <i class="fa-solid fa-thumbtack"></i>
+        Pinned Documents
+      </p>
+      <div class="docs-pinned-grid" id="docs-pinned-grid"></div>
+
+      <!-- Documents table — tbody populated by documents.js -->
+      <div class="docs-table-wrap">
+        <table class="docs-table" aria-label="Project documents">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th class="docs-th-updated">Last Updated</th>
+            </tr>
+          </thead>
+          <tbody id="docs-tbody"></tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Page-specific script (loaded at end of body for performance) -->
+  <script src="js/documents.js"></script>
+</body>
+</html>
