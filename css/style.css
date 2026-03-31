@@ -727,7 +727,7 @@ button:hover {
   font-family: 'Neue Montreal', sans-serif;
 }
 
-html,
+/* html,
 body {
   height: 100%;
 }
@@ -754,11 +754,11 @@ button {
 .app-layout {
   display: flex;
   min-height: 100vh;
-}
+} */
 
 /* SIDEBAR */
 
-.sidebar {
+/* .sidebar {
   width: 256px;
   background-color: #050505;
   color: #ffffff;
@@ -811,7 +811,7 @@ button {
   background-color: #232326;
   color: #ffffff;
   font-weight: 500;
-}
+} */
 
 /* MAIN CONTENT */
 
