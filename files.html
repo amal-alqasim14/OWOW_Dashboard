@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Documents</title>
 
+  <!-- Shared team stylesheet — all CSS for this page is in here -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -45,7 +47,7 @@
         </a>
       </nav>
 
-      <!-- Bottom: Client login
+      <!-- Bottom: client login -->
       <div class="sidebar-footer">
         <div class="docs-client-login">
           <div class="docs-client-avatar">CL</div>
@@ -55,7 +57,7 @@
           </div>
         </div>
       </div>
-    </aside> --> <!-- will be added later-->
+    </aside>
 
     <!-- ── Main content ──────────────────────────────────────── -->
     <main class="main-content">
@@ -67,7 +69,7 @@
         <span>Project Lumina</span>
       </nav>
 
-      <!-- Page header: title + project manager block -->
+      <!-- Page header: project title + project manager block -->
       <div class="docs-header-row">
         <h1>Project Lumina</h1>
         <div class="docs-pm-block">
@@ -95,14 +97,14 @@
         />
       </div>
 
-      <!-- Pinned documents grid — populated by documents.js -->
+      <!-- Pinned documents — cards injected by documents.js -->
       <p class="docs-pinned-label">
         <i class="fa-solid fa-thumbtack"></i>
         Pinned Documents
       </p>
       <div class="docs-pinned-grid" id="docs-pinned-grid"></div>
 
-      <!-- Documents table — tbody populated by documents.js -->
+      <!-- Documents table — rows injected by documents.js -->
       <div class="docs-table-wrap">
         <table class="docs-table" aria-label="Project documents">
           <thead>
@@ -119,7 +121,7 @@
     </main>
   </div>
 
-  <!-- Page-specific script (loaded at end of body for performance) -->
+  <!-- Page logic -->
   <script src="js/documents.js"></script>
 </body>
 </html>
