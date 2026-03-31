@@ -620,7 +620,7 @@ label {
 }
 
 /* Inputs */
-input {
+.login input {
   width: 100%;
   border: none;
   border-bottom: 1px solid #d5dbe5;
