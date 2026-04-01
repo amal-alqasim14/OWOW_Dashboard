@@ -29,7 +29,7 @@
           <i class="fa-regular fa-map"></i>
           <span>Roadmap</span>
         </a>
-        <a href="documents.html" class="nav-item active">
+        <a href="files.html" class="nav-item active">
           <i class="fa-regular fa-file-lines"></i>
           <span>Documents</span>
         </a>
@@ -47,75 +47,62 @@
         </a>
       </nav>
 
-      <!-- Bottom: client login -->
-      <div class="sidebar-footer">
-        <div class="docs-client-login">
-          <div class="docs-client-avatar">CL</div>
-          <div>
-            <div class="docs-client-name">Client Login</div>
-            <div class="docs-client-logout">Log out</div>
-          </div>
-        </div>
-      </div>
+
     </aside>
 
     <!-- ── Main content ──────────────────────────────────────── -->
     <main class="main-content">
-
-      <!-- Breadcrumb -->
-      <nav class="docs-breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Projects</a>
-        <i class="fa-solid fa-chevron-right docs-breadcrumb-sep"></i>
-        <span>Project Lumina</span>
-      </nav>
-
-      <!-- Page header: project title + project manager block -->
-      <div class="docs-header-row">
-        <h1>Project Lumina</h1>
-        <div class="docs-pm-block">
-          <div class="docs-pm-info">
-            <div class="docs-pm-label">Project Manager</div>
-            <div class="docs-pm-name">Sarah Jenkins</div>
-          </div>
-          <div class="docs-pm-avatar-placeholder">SJ</div>
-          <button class="docs-contact-btn">CONTACT</button>
+      <header class="top-header">
+        <div>
+          <p class="breadcrumb">Projects / <span>Project Lumina</span></p>
+          <h1 class="project-title">Project Lumina</h1>
         </div>
-      </div>
 
-      <!-- Section title -->
-      <h2 class="docs-section-title">Project Documents</h2>
+        <div class="header-icons">
+          <button class="icon-btn" type="button">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img src="images/profile.png" alt="User avatar" class="avatar" />
+        </div>
+      </header>
 
-      <!-- Search bar -->
-      <div class="docs-search-wrap">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input
-          id="docs-search"
-          class="docs-search-input"
-          type="text"
-          placeholder="Search documents..."
-          aria-label="Search documents"
-        />
-      </div>
+      <div class="docs-main-inner">
 
-      <!-- Pinned documents — cards injected by documents.js -->
-      <p class="docs-pinned-label">
-        <i class="fa-solid fa-thumbtack"></i>
-        Pinned Documents
-      </p>
-      <div class="docs-pinned-grid" id="docs-pinned-grid"></div>
+        <!-- Section title -->
+        <h2 class="docs-section-title">Project Documents</h2>
 
-      <!-- Documents table — rows injected by documents.js -->
-      <div class="docs-table-wrap">
-        <table class="docs-table" aria-label="Project documents">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Category</th>
-              <th class="docs-th-updated">Last Updated</th>
-            </tr>
-          </thead>
-          <tbody id="docs-tbody"></tbody>
-        </table>
+        <!-- Search bar -->
+        <div class="docs-search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            id="docs-search"
+            class="docs-search-input"
+            type="text"
+            placeholder="Search documents..."
+            aria-label="Search documents"
+          />
+        </div>
+
+        <!-- Pinned documents — cards injected by documents.js -->
+        <p class="docs-pinned-label">
+          <i class="fa-solid fa-thumbtack"></i>
+          Pinned Documents
+        </p>
+        <div class="docs-pinned-grid" id="docs-pinned-grid"></div>
+
+        <!-- Documents table — rows injected by documents.js -->
+        <div class="docs-table-wrap">
+          <table class="docs-table" aria-label="Project documents">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th class="docs-th-updated">Last Updated</th>
+              </tr>
+            </thead>
+            <tbody id="docs-tbody"></tbody>
+          </table>
+        </div>
       </div>
 
     </main>

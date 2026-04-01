@@ -1172,6 +1172,10 @@ button {
   background: #f3f3f3;
 }
 
+.files-page .docs-main-inner{
+  padding: 32px 40px;
+}
+
 .topbar {
   height: 84px;
   background: #ffffff;
