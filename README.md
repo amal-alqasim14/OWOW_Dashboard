@@ -7,7 +7,7 @@ A dashboard platform where clients and internal teams can manage and track proje
 - Dashboard – Project status & progress overview  
 - Documents – Upload and view files  
 - Updates – Timeline with project updates
-- Api - to retrieve data
+- API - To retrieve data
 
 ---
 
