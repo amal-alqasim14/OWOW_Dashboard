@@ -7,7 +7,7 @@ A dashboard platform where clients and internal teams can manage and track proje
 - Dashboard – Project status & progress overview  
 - Documents – Upload and view files  
 - Updates – Timeline with project updates
-- Api - 
+- Api - to retrieve data
 
 ---
 
@@ -19,6 +19,6 @@ A dashboard platform where clients and internal teams can manage and track proje
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript  
 - Backend: Node.js (Express)  
-- Database: ??
+- Database: postgreSQL
 
 ---
