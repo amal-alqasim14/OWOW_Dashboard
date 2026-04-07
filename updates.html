@@ -27,7 +27,7 @@
           <i class="fa-regular fa-folder"></i>
           <span>Roadmap</span>
         </a>
-        <a href="documents.html" class="nav-item">
+        <a href="files.html" class="nav-item">
           <i class="fa-regular fa-file-lines"></i>
           <span>Documents</span>
         </a>
@@ -45,7 +45,7 @@
     <main class="main-content">
       <header class="top-header">
         <div>
-          <p class="breadcrumb">Projects / <span>Project Lumina</span></p>
+          <p class="breadcrumb">Projects / Project Lumina /  <span>Updates</span></p>
           <h1 class="project-title">Project Lumina</h1>
         </div>
 
@@ -53,7 +53,7 @@
           <button class="icon-btn" type="button">
             <i class="fa-regular fa-bell"></i>
           </button>
-          <img src="https://i.pravatar.cc/40?img=12" alt="User avatar" class="avatar" />
+          <img src="images/profile.png" alt="User avatar" class="avatar" />
         </div>
       </header>
 
@@ -66,16 +66,16 @@
             <h2>Updates</h2>
           </div>
 
-          <div class="featured-card">
+          <div class="featured-card" id="featuredCard">
             <div class="featured-top">
-              <span class="tag dark">Milestone</span>
-              <span class="date">Oct 24, 2026</span>
+              <span class="tag dark" id="featuredTag">Milestone</span>
+              <span class="date" id="featuredDate">Oct 24, 2026</span>
             </div>
 
             <div class="featured-body">
               <div>
-                <h3>Sprint 4 Completed</h3>
-                <p>
+                <h3 id="featuredTitle">Sprint 4 Completed</h3>
+                <p id="featuredDescription">
                   We have successfully completed the design phase and have moved into
                   development. All core UI components have been approved.
                 </p>
@@ -96,68 +96,12 @@
 
           <section class="timeline-section">
             <h4 class="section-label">THIS WEEK</h4>
-
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="update-card">
-                  <div class="card-header">
-                    <h3>API Integration Started</h3>
-                    <span class="time-text">2 days ago</span>
-                  </div>
-                  <div class="mini-tags">
-                    <span class="mini-tag">Development</span>
-                    <span class="status on-track">● On Track</span>
-                  </div>
-                  <p>
-                    Backend team has begun connecting the frontend components to the
-                    staging API endpoints. This is progressing slightly ahead of schedule.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="update-card">
-                  <div class="card-header">
-                    <h3>Design Review: User Dashboard</h3>
-                    <span class="time-text">1 week ago</span>
-                  </div>
-                  <div class="mini-tags">
-                    <span class="mini-tag">Design</span>
-                    <span class="status action-required">● Action Required</span>
-                  </div>
-                  <p>
-                    Please review the latest mockups for the user dashboard. Feedback
-                    required by Friday to maintain the development schedule.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="timeline" id="thisWeekTimeline"></div>
           </section>
 
           <section class="timeline-section">
             <h4 class="section-label">LAST WEEK</h4>
-
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="update-card">
-                  <div class="card-header">
-                    <h3>Sprint 3 Completed</h3>
-                    <span class="time-text">Sep 28, 2026</span>
-                  </div>
-                  <div class="mini-tags">
-                    <span class="mini-tag">Milestone</span>
-                    <span class="status completed">● Completed</span>
-                  </div>
-                  <p>
-                    Authentication flow and basic profile management features are now
-                    functional in the staging environment. Ready for internal testing.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="timeline" id="lastWeekTimeline"></div>
           </section>
         </div>
 
@@ -169,24 +113,24 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h3>On Track</h3>
-                <p>Last updated today</p>
+                <h3 id="currentStatus">On Track</h3>
+                <p id="statusUpdatedText">Last updated today</p>
               </div>
             </div>
           </div>
 
           <div class="info-card">
             <p class="card-label">NEXT MILESTONE</p>
-            <span class="date-pill">Nov 15, 2026</span>
-            <h3>Beta Release</h3>
-            <p>
+            <span class="date-pill" id="milestoneDate">Nov 15, 2026</span>
+            <h3 id="milestoneTitle">Beta Release</h3>
+            <p id="milestoneDescription">
               Internal testing environment deployed for stakeholder review.
             </p>
 
             <div class="progress-bar">
-              <div class="progress-fill" data-progress="65"></div>
+              <div class="progress-fill" id="progressFill" data-progress="65"></div>
             </div>
-            <p class="progress-text">65% complete</p>
+            <p class="progress-text" id="progressText">65% complete</p>
           </div>
 
           <div class="info-card">
@@ -196,8 +140,8 @@
                 <i class="fa-regular fa-file-pdf"></i>
               </div>
               <div>
-                <h4>Sprint_4_Report.pdf</h4>
-                <p>2.4 MB • Uploaded Oct 24</p>
+                <h4 id="latestDocumentName">Sprint_4_Report.pdf</h4>
+                <p id="latestDocumentMeta">2.4 MB • Uploaded Oct 24</p>
               </div>
             </div>
           </div>

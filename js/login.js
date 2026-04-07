@@ -11,5 +11,5 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  alert("Logged in");
+  window.location.href = "index.html";
 });
